@@ -1,2 +1,2 @@
 # Game_page
-![Image Alt Text](.gamepage.png)
+![Image Alt Text](gamepage.png)
