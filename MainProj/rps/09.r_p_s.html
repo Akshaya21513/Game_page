@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    
+    <button class="move-button" onclick = "
+    play('Rock');
+    "><img src="images/Rock-emoji.png" class="move-icon">
+    </button>
+
+    <button class="move-button" onclick="
+    play('Scissor');
+    "><img src="images/Scissor-emoji.png" class="move-icon">
+    </button>
+
+    <button class="move-button" onclick="
+    play('Paper');
+    "><img src="images/Paper-emoji.png" class="move-icon">
+    </button>
+
+    <p class="js_wol result"></p>
+    <p class="js_move"></p> 
+    <p class="js_score score"></p>
+
+    
+    <button class="g" onclick="
+    score.Win=0;
+    score.Lose=0;
+    score.Tie=0; 
+    localStorage.removeItem('score');
+    alert('THE SCORES HAVE BEEN RESET');
+    updateScore();
+    location.reload();
+    ">
+        Reset Game
+    </button>
+
+    <p></p>
+    <a href="../mainpage.html">Main Page</a>  
+    <!-- ../basically takes u back one directory level  -->
+    <script src="09.r_p_s.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+body{
+    background-image: url('BG2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #2c2929;
+    color:rgb(227, 194, 194);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color:beige;
+}
+h1{
+    text-align: center;
+}
+.move-icon{
+    height : 50px;
+}
+
+.move-button{
+    
+    background-color: transparent;
+    border:3px solid white;
+    width: 120px;
+    height: 120px;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.result{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 30px;
+}
+
+.score{
+    margin:30px;
+}

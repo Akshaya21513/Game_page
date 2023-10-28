@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game page</title>
+    <style>
+        .style_sub {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #e24949;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        .style_sub:hover {
+            background-color: #c66666;
+        }
+        
+        
+        body{
+            background-image: url('BG.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #151922;
+        }
+        a{
+            color:#333;
+        }
+        .heading1{
+            text-align: center;
+            font-weight: bold;
+            margin-top: 2%;
+            color: #e27d60;
+            font-family: 'Arial';
+        }
+        .heading3{
+            text-align: center;
+            font-weight: bold;
+            margin-top: 5%;
+            color: #daad86;
+            font-family: 'Verdana', Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="heading1">Game page</h1>
+    <h3 class="heading3">Rock Paper Scissor</h3>
+    <button class="js_sub_button style_sub" onclick="
+    sub();
+    ">Play</button>
+    <br><br>
+
+    <!-- <h2>Rock Paper Scissor</h2>
+    <a href="rps\09.r_p_s.html">Click here</a> -->
+
+    <script>
+        if (localStorage.getItem('buttonState') === 'Good game!') {
+            document.querySelector('.js_sub_button').innerText = 'Good game!';
+        }
+
+        function sub() {
+            let but = document.querySelector('.js_sub_button');
+            if (but.innerText === 'Play') {
+                but.innerText = 'Good game!';
+            } else {
+                but.innerText = 'Play';
+            }
+        
+            window.location.href = 'rps/09.r_p_s.html';
+        }
+    </script>
+    
+</body>
+</html>
